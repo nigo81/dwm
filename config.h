@@ -49,7 +49,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "utools",     NULL,       NULL,       0,            1,           -1 },
 	{ "Android Emulator", NULL,       NULL,       0,            1,           -1 },
 	{ "Emulator", NULL,       NULL,       0,            1,           -1 },
 	{ "quemu-system-i386", NULL,       NULL,       0,            1,           -1 },
@@ -96,7 +96,8 @@ static const char *scratchpadcmd[] = { "alacritty", "-t", scratchpadname, "-g", 
 
 static const char *setqwertycmd[]  = { "/home/nigo/scripts/setxmodmap-qwerty.sh", NULL };
 
-static const char *suspendcmd[]  = { "/home/nigo/scripts/suspend.sh", NULL };
+//static const char *suspendcmd[]  = { "/home/nigo/scripts/suspend.sh", NULL };
+static const char *suspendcmd[]  = { "slock", NULL };
 
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
